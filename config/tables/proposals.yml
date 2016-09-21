@@ -76,6 +76,12 @@ default: &DEFAULT
     soc_code:
       header: SOC
       display: client_data.soc_code
+    is_tock_billable:
+      header: Billable
+      display: client_data.is_tock_billable
+    tock_project:
+      header: Tock
+      display: client_data.tock_project
   columns:
     - public_id
     - name
@@ -113,3 +119,5 @@ gsa18f:
     - created_at
     - urgency
     - purchase_type
+    - is_tock_billable
+    - tock_project
